@@ -1,2 +1,2 @@
-# Curso-dePython
+# Curso-de-Python
  Curso em python
