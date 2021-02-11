@@ -1,0 +1,5 @@
+va = input('Digite algo: ')
+print('É um numero: ',va.isnumeric())
+print('É um letra: ',va.isalpha())
+print('É alfa numerico: ',va.isalnum())
+print('Ele pode ser escrito: ',va.isprintable())
