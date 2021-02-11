@@ -1,3 +1,3 @@
 num1 = int(input('Digite o primeiro numero: '))
 num2 = int(input('Digite outro: '))
-print(f'a soma e: {num1+num2}')
+print(f'a soma entre {num1} e {num2} é: {num1+num2}')
