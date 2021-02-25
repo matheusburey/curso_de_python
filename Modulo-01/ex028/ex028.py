@@ -7,6 +7,6 @@ print('-=' * 15)
 player = int(input('ADIVINHE QUAL É DE 0 A 5: '))
 
 if pc == player:
-    print('PARABENS VOCCE ASSERTOU!!!!')
+    print('PARABENS VOCCE ACERTOU!!!!')
 else:
     print(f'GANHEI!! estava pensando em {pc}')
