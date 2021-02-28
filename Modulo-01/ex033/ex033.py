@@ -13,5 +13,7 @@ if menor > val2:
 if menor > val3:
     menor = val3
 
+print('=' * 20)
 print('O maior valor é:',maior)
-print('O manor valor é:', menor)
+print('O menor valor é:', menor)
+print('=' * 20)

@@ -1,0 +1,7 @@
+print('-' * 15)
+print('\033[35mFinanceira\033[m')
+print('-' * 15)
+casa = float(input('Digite o valor da casa: R$ '))
+salario = float(input('Digite o valor do seu salario: R$ '))
+ano = float(input('Digite quantos anos deseja pagar: '))
+print(f'O valor da prestação é de R$ {casa / (ano * 12):.2f} em {ano * 12:.0f}X')
