@@ -18,26 +18,26 @@ print(f'O computador escolheu {opcoes[pc]}')
 print(f'Voce escolheu {opcoes[player-1]}')
 print('-' * 15)
 
-if player == 1:
+if player == 1: #player jogou pedra
     if pc == 0:
         print('EMPATOU')
     elif pc == 1:
         print('O COMPUTADOR GANHOU')
     else:
         print('VOCE GANHOU')
-elif player == 2:
+elif player == 2:#player jogou papel
     if pc == 0:
         print('VOCE GANHOU')
     elif pc == 1:
         print('EMPATOU')
     else:
         print('O COMPUTADOR GANHOU')
-elif player == 3:
+elif player == 3:#player jogou tesoura
     if pc == 0:
         print('O COMPUTADOR GANHOU')
     elif pc == 1:
         print('VOCE GANHOU')
     else:
         print('EMPATOU')
-else:
+else:#player jogada invalida
     print('\033[1;31mJogada invalida tente novamente')
