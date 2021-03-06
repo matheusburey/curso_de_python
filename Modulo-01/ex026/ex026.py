@@ -1,5 +1,6 @@
 frase = str(input('Digite uma frase: ')).strip().upper()
 n = len(frase)
+print(f'A frase tem {n} letras')
 print(f'A letra A aparece {frase.count("A")} vezes na frase')
 print(f'A letra aparece a primeira vez na posição {frase.find("A")+1}')
 print(f'E aparece pela ultima vez na pozição {frase.rfind("A")+1}')
