@@ -1,4 +1,4 @@
-print('=' * 30)
+print('\033[33m', '=' * 30)
 print('{:^30}'.format('CAIXA ELETRONICO'))
 print('=' * 30)
 '''cont50 = cont20 = cont10 = cont1 = 0
@@ -27,7 +27,7 @@ print(fVoce recebeu:
 Volte sempre!!!)
 minha resposta'''
 #resposta do professor
-num = int(input('Qual valor deseja sacar: R$ '))
+num = int(input('\033[32mQual valor deseja sacar: R$ \033[m'))
 total = num
 ced = 50
 tot = 0
@@ -36,7 +36,8 @@ while True:
         total -= ced
         tot += 1
     else:
-        print(f'Total de {tot} cedulas de R$ {ced}')
+        if tot > 0:
+            print(f'Total de {tot} cedulas de R$ {ced}')
         if ced == 50:
             ced = 20
         elif ced == 20:
@@ -46,5 +47,5 @@ while True:
         tot = 0
         if total == 0:
             break
-
-
+print('-' * 30)
+print('Volte sempre!!')
