@@ -1,0 +1,15 @@
+times = ('Flamengo', 'Internacional', 'Atletico-MG', 'São Paulo', 'Fluminense', 'Gremio', 'Palmeiras',
+         'Santos', 'Atletico-PR', 'Bragantino', 'Ceará', 'Corinthians', 'Atletico-GO', 'Bahia', 'Sport',
+         'Fortaleza', 'Vasco', 'Goias', 'Coritiba', 'Botafogo')
+print('\033[32m-' * 40)
+print(f'{"TABELA DO BRASILEIRÃO":^40}')
+print('-' * 40)
+print(f'\033[mListas de time do brasileirão serie A: {times}')
+print('- -' * 15)
+print(f'Os 5 primeiros são {times[0:5]}')
+print('- -' * 15)
+print(f'Os 4 ultimos são: {times[-4:]}')
+print('- -' * 15)
+print(f'Os times em ordem alfabetica são: {sorted(times)}')
+print('- -' * 15)
+print(f'O São Paulo esta {times.index("São Paulo") + 1} posição')
