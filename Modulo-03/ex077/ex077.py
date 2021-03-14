@@ -6,6 +6,3 @@ for palavras in lista:
     for vogais in palavras:
         if vogais in 'AEIOU':
             print(vogais, end=' ')
-
-
-
