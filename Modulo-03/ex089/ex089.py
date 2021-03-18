@@ -1,30 +1,22 @@
-from random import randint
-from  time import sleep
-jogos = []
-tempo = []
-print('-'* 30)
-print(f'{"JOGOS DA MEGA SENA":^30}')
-print('-'* 30)
+cadastros = []
 while True:
-    num = int(input('Quantos jogos: '))
-    for j in range(0, num):
-        cont = 0
-        while True:
-            num = randint(0, 60)
-            if num not in tempo:
-                tempo.append(num)
-                cont += 1
-            if cont == 6:
-                break
-        tempo.sort()
-        jogos.append(tempo[:])
-        tempo.clear()
-    print('-' * 30)
-    for c, l in enumerate(jogos):
-        print(f'Jogo {c+1}: {l}')
-        sleep(0.5)
-    print('-' * 30)
-    jogos.clear()
-    escolha = str(input('Deseja continuar [S/N]:')).upper()
-    if escolha == 'N':
+    nome = str(input('Nome: ')).capitalize().strip()
+    n1 = float(input('Nota 1: '))
+    n2 = float(input('Nota 2: '))
+    media = (n1 + n2) / 2
+    cadastros.append([nome , [n1, n2], media])
+    sn = str(input('Deseja continuar [S/N]: ')).upper()
+    if sn == 'N':
         break
+print('-=' * 20)
+print(f'Nº | {"NOME":<15} | MEDIA')
+print('-' * 30)
+for num , l in enumerate(cadastros):
+    print(f'{num} | {l[0]:<15} | {l[2]:.1f}')
+print('-' * 30)
+while True:
+    aluno = int(input('Mostrar a nota de qual aluno?(999 parar): '))
+    if aluno == 999:
+        break
+    print(f'As notas de {cadastros[aluno][0]} são {cadastros[aluno][1]}')
+    print('-' * 30)
