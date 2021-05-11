@@ -63,3 +63,18 @@
   54. Grupo da Maioridade.
   55. Maior e menor da sequência.
   56. Analisador completo.
+  57. Validação de Dados.
+  58. Jogo da Adivinhação v2.0.
+  59. Criando um Menu de Opções.
+  60. Cálculo do Fatorial.
+  61. Progressão Aritmética v2.0.
+  62. Super Progressão Aritmética v3.0.
+  63. Sequência de Fibonacci v1.0.
+  64. Tratando vários valores v1.0.
+  65. Maior e Menor valores.
+  66. Vários números com flag.
+  67. Tabuada v3.0.
+  68. Jogo do Par ou Ímpar.
+  69. Análise de dados do grupo.
+  70. Estatísticas em produtos.
+  71. Simulador de Caixa Eletrônico.
