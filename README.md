@@ -1,5 +1,4 @@
 # Curso de Python
- ***
  Curso em python do [Curso Em Video](https://www.cursoemvideo.com)
  
  Exercicios modulo 1:
@@ -78,3 +77,47 @@
   69. Análise de dados do grupo.
   70. Estatísticas em produtos.
   71. Simulador de Caixa Eletrônico.
+
+ Exercicios modulo 3:
+ 
+  72. Número por Extenso.
+  73. Tuplas com Times de Futebol.
+  74. Maior e menor valores em Tupla.
+  75. Análise de dados em uma Tupla.
+  76. Lista de Preços com Tupla.
+  77. Contando vogais em Tupla.
+  78. Maior e Menor valores na Lista.
+  79. Valores únicos em uma Lista.
+  80. Lista ordenada sem repetições.
+  81. Extraindo dados de uma Lista.
+  82. Dividindo valores em várias listas.
+  83. Validando expressões matemáticas.
+  84. Lista composta e análise de dados.
+  85. Listas com pares e ímpares.
+  86. Matriz em Python.
+  87. Mais sobre Matriz em Python.
+  88. Palpites para a Mega Sena.
+  89. Boletim com listas compostas.
+  90. Dicionário em Python.
+  91. Jogo de Dados em Python.
+  92. Cadastro de Trabalhador em Python.
+  93. Cadastro de Jogador de Futebol.
+  94. Unindo dicionários e listas.
+  95. Aprimorando os Dicionários.
+  96. Função que calcula área.
+  97. Um print especial.
+  98. Função de Contador.
+  99. Função que descobre o maior.
+  100. Funções para sortear e somar.
+  101. Funções para votação.
+  102. Função para Fatorial.
+  103. Ficha do Jogador.
+  104. Validando entrada de dados em Python.
+  105. Analisando e gerando Dicionários.
+  106. Interactive helping system in Python.
+  107. Exercitando módulos em Python.
+  108. Formatando Moedas em Python.
+  109. Formatando Moedas em Python.
+  110. Reduzindo ainda mais seu programa.
+  111. Transformando módulos em pacotes.
+  112. Entrada de dados monetários.
