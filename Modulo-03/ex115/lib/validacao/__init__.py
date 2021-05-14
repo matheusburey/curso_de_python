@@ -29,5 +29,24 @@ def ler_arquivo(arq):
     except:
         print('Houve um erro ao abrir arquivo')
     else:
-        print(f'{"PESSOAS CADASTRADAS":^40}')
-        print(a.readline())
+        for lista in a:
+            pessoa = lista.split(';')
+            pessoa[1] = pessoa[1].replace('\n', '')
+            print(f'  {pessoa[0]:<15}{pessoa[1]}')
+        a.close()
+
+
+def add_pessoa(arq):
+    try:
+        a = open(arq, 'at')
+        nome: str = (input('Nome: '))
+        idade = int(input('Idade: '))
+    except:
+        print('Houve um erro')
+    else:
+        try:
+            a.write(f'{nome};{idade}\n')
+        except:
+            print('Houve um erro na hora de escrever os dados')
+        else:
+            print('\033[32mPessoa registrada com sucesso\033[m')

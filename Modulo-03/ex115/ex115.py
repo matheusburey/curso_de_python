@@ -6,16 +6,20 @@ arq = "lista.txt"
 validacao.arquivo_existe(arq)
 
 while True:
-    interface.interface()
+
+    interface.menu()
     sleep(0.3)
     escolha = validacao.valida('\033[33mSua opção: \033[m')
     sleep(0.5)
     if escolha == 1:
+        interface.cabecalho('PESSOAS CADASTRADAS')
         validacao.ler_arquivo(arq)
+        sleep(0.5)
     elif escolha == 2:
-        print('2')
+        interface.cabecalho('NOVO CADASTRO')
+        validacao.add_pessoa(arq)
+        sleep(0.5)
     else:
-        print(f'{"SAINDO DO SISTEMA":^40}')
-        print('/-' * 20)
+        interface.cabecalho('SAINDO DO SISTEMA...')
         sleep(0.5)
         break
