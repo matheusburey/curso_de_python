@@ -3,12 +3,12 @@ print('-' * 20)
 print('PAR OU IMPAR')
 print('-' * 20)
 vitoria = 0
-pess = ' '
 while True:
+    pess = ' '
     pc = randint(0, 11)
     num = int(input('Digite um valor: '))
     while pess not in 'PI':
-        pess = str(input('PAR OU IMPAR: '))[0].upper().split()
+        pess = str(input('PAR[P] OU IMPAR [I]: ')).upper()
     total = pc + num
     print(f'Voce escolheu {num} e o computador escolheu {pc} \nO resutado é {total}')
     if pess == 'P':

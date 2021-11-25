@@ -1,6 +1,6 @@
 from random import randint
 print('=-' * 15)
-print('ADIVINHE EM QUE NUMEO ESTOU PENÇANDO')
+print('ADIVINHE EM QUE NUMERO ESTOU PENÇANDO')
 print('=-' * 15)
 
 pc = randint(0, 10)

@@ -4,4 +4,4 @@ while num != 999:
     if num != 999:
         total += num
         cont += 1
-print(f'Voce diggitou {cont} numeros e a soma eles foi {total}')
+print(f'Voce digitou {cont} numeros e a soma eles foi {total}')
