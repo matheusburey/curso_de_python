@@ -1,17 +1,16 @@
 maior = homen = mulheres = 0
+
 while True:
     print('-' * 20)
     print('CADASTRO DE PESSOA')
     print('-' * 20)
-    sexo = opcao = 0
+    sexo = opcao = ' '
     idade = int(input('Qual sua idade: '))
 
     while sexo not in 'FM':
         sexo = str(input('Qual seu sexo [M/F]: ')).upper()
     if idade > 18:
         maior += 1
-        if sexo == 'M':
-            homen += 1
     if sexo == 'F' and idade < 21:
         mulheres += 1
     elif sexo == 'M':
