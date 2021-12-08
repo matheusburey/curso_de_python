@@ -1,8 +1,9 @@
-maior = 0
-menor = 1000
+maior = menor = 0
 for c in range(1,6):
     peso = float(input(f'Digite o peso da {c}ª pessoa: '))
-    if maior < peso:
+    if c == 1:
+        maior = menor = peso
+    elif maior < peso:
         maior = peso
     elif menor > peso:
         menor = peso
