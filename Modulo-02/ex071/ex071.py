@@ -1,7 +1,10 @@
 print('\033[33m', '=' * 30)
 print('{:^30}'.format('CAIXA ELETRONICO'))
 print('=' * 30)
-'''cont50 = cont20 = cont10 = cont1 = 0
+'''
+minha resposta
+
+cont50 = cont20 = cont10 = cont1 = 0
 num = int(input('Qual valor deseja sacar: R$ '))
 
 while True:
@@ -25,8 +28,8 @@ print(fVoce recebeu:
 {cont10} notas de R$ 10
 {cont1} notass de R$ 1
 Volte sempre!!!)
-minha resposta'''
-#resposta do professor
+
+resposta do professor
 num = int(input('\033[32mQual valor deseja sacar: R$ \033[m'))
 total = num
 ced = 50
@@ -47,5 +50,26 @@ while True:
         tot = 0
         if total == 0:
             break
+print('-' * 30)
+print('Volte sempre!!')
+'''
+
+# Minha Nova resposta
+valor = int(input('\033[32mQual valor deseja sacar: R$ \033[m'))
+cedulas = (50, 20, 10, 1)
+i = total_cedulas = 0
+
+while True:
+    cedula = cedulas[i]
+    if valor >= cedula:
+        valor -= cedula
+        total_cedulas += 1
+    else:
+        print(f'Total de {total_cedulas} cedulas de R$ {cedula}')
+        i += 1
+        total_cedulas = 0
+        if valor == 0:
+            break
+
 print('-' * 30)
 print('Volte sempre!!')
