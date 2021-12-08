@@ -6,7 +6,7 @@ for c in range(1,5):
     print(f'------{c}ª PESSOA--------')
     nome = str(input('Digite seu nome: ')).upper()
     idade = int(input('digite sua idade: '))
-    sexo = str(input('Sexo [M\F]: ')).upper()
+    sexo = str(input('Sexo [M/F]: ')).upper()
 
     if maisidade < idade and sexo == 'M':
         maisidade = idade
