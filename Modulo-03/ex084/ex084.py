@@ -1,31 +1,27 @@
-cont = mais = menos = 0
-pessoas = list()
-cadastro = list()
+lighter_person = []
+heavy_person = []
+registration_list = list()
 print('-' * 20)
 print(f'{"CADASTRO DE PESSOAS":^20}')
 print('-' * 20)
+
 while True:
-    pessoas.append(str(input('Nome: ')))
-    pessoas.append(float(input('Peso: ')))
-    cadastro.append(pessoas[:])
-    if cont == 0:
-        maior = menor = pessoas[1]
-    elif pessoas[1] > maior:
-        maior = pessoas[1]
-    elif pessoas[1] < menor:
-        menor = pessoas[1]
-    cont += 1
-    pessoas.clear()
-    escolha = str(input('Deseja continuar?[S/N] ')).upper()
-    if escolha == 'N':
+    name = str(input('Nome: '))
+    weight = float(input('Peso: '))
+    registration_list.append([name, weight])
+
+    if len(registration_list) == 1:
+        lighter_person = [name, weight]
+        heavy_person = [name, weight]
+    elif weight > heavy_person[1]:
+        heavy_person = [name, weight]
+    elif lighter_person[1] > weight:
+        lighter_person = [name, weight]
+    choice = str(input('Deseja continuar?[S/N] ')).upper()
+    if choice != 'S':
         break
+
 print('-' * 20)
-print(f'Voce cadastrou {cont} pessoas')
-print(f'O maior peso foi de {maior} de ', end='')
-for peso in cadastro:
-    if peso[1] == maior:
-        print(peso[0],end='')
-print(f'O menor peso foi de {menor} de ', end='')
-for peso in cadastro:
-    if peso[1] == menor:
-        print(peso[0],end='')
+print(f'Voce cadastrou {len(registration_list)} pessoas')
+print(f'O maior peso foi de {heavy_person[0]} de {heavy_person[1]} kg')
+print(f'O menor peso foi de {lighter_person[0]} de {lighter_person[1]} kg')
